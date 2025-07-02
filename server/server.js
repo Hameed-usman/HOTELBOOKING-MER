@@ -15,7 +15,7 @@ app.use(clerkMiddleware())
 
 // API FOR CLERK WEHBOOK 
 app.use('/api/clerk', clerkWebhooks)
-app.get('/', (res, req) => res.send("Api is working"))
+app.get('/', (req, res) => res.send("Api is working"))
 
 const PORT = process.env.PORT || 3000
 
